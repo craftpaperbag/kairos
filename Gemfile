@@ -29,4 +29,5 @@ group :test do
   gem 'rspec-rails'
   gem 'capybara'
   gem 'fuubar'
+  gem 'factory_girl_rails', '~> 4.0'
 end
