@@ -8,9 +8,10 @@
       thead
         tr
           - 12.times do |i|
-            th.text-center = i == 0 ? 'N' : "N + #{i}"
+            th.text-center
+              = i == 0 ? 'N' : "N + #{i}"
       tbody
         - 12.times do
           tr
             - 12.times do
-              td
+              td.cell

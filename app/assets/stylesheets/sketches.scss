@@ -3,4 +3,16 @@
   th, td {
     height: 3em;
   }
+
+  td {
+    &.clicked {
+      background: $brand-primary;
+    }
+    &:hover {
+      background: $brand-info;
+    }
+    &.period {
+      background: $brand-success;
+    }
+  }
 }
