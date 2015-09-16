@@ -1,5 +1,4 @@
 require 'rails_helper'
 
-RSpec.describe Sketch, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+describe Sketch, type: :model do
 end

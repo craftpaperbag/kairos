@@ -4,4 +4,11 @@
     p
       | 計画をスケッチしよう
     hr
+.row
+  .col-xs-8.col-xs-offset-2.text-center
+    = form_for @sketch do |f|
+      .form-group
+        = f.text_field :name, placeholder: '新しいスケッチ', class: 'form-control input-lg text-center'
+      .form-group
+        = f.submit '作成', class: 'btn btn-primary btn-lg btn-block'
 = render 'shared/messages'
