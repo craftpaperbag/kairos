@@ -2,3 +2,15 @@
   .col-xs-12.text-center
     h1.text-muted = @sketch.name
 = render 'shared/messages'
+.row
+  .col-xs-12
+    table.sketch.table.table-bordered
+      thead
+        tr
+          - 12.times do |i|
+            th.text-center = i == 0 ? 'N' : "N + #{i}"
+      tbody
+        - 12.times do
+          tr
+            - 12.times do
+              td

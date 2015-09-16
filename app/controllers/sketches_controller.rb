@@ -1,4 +1,8 @@
 class SketchesController < ApplicationController
+  before_action :set_sketch, only: %i( show )
+
+  def show
+  end
 
   def create
     sketch = Sketch.new sketch_params
@@ -14,8 +18,11 @@ class SketchesController < ApplicationController
   end
 
   private
-
   def sketch_params
     params.require(:sketch).permit(:name)
+  end
+
+  def set_sketch
+    @sketch = Sketch.find params[:id]
   end
 end
